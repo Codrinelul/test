@@ -1,6 +1,4 @@
 <?php
-
-
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -24,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         exit;
     }
 
-    $id = $_GET['id'];
+    $id = $_GET["id"];
 
 
     //read selected entry
@@ -56,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             break;
         }
 
-        $sql = "UPDATE clients" .
+        $sql = "UPDATE clients " .
             "SET name = '$name', email = '$email', phone = '$phone', address = '$address'" . "WHERE id = $id";
 
         $result = $connection->query($sql);
@@ -75,12 +73,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 }
 
 ?>
-
-
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
