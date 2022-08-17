@@ -11,7 +11,7 @@
 
 <body>
     <div class="container my-5">
-        <h2>Your list</h2>
+        <h2>Tabel</h2>
         <a class="btn btn-primary" href="/TEST/create.php" role="button">New Entry</a>
         <br>
         <table class="table">
